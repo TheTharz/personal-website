@@ -1,100 +1,82 @@
 import { Link } from 'react-scroll';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faHome,
-  faUser,
-  faCode,
-  faClock,
-  faProjectDiagram,
-  faEnvelope,
-  faNewspaper,
-} from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   return (
-    <div className='flex items-center absolute h-screen'>
-      <div
-        className='fixed right-5 z-20 flex flex-col items-center justify-center border-2 p-2 md:p-4 h-fit gap-2 bg-[#050816]'
-        style={{
-          borderImage:
-            'linear-gradient(45deg, rgba(151, 65, 252, 1), rgba(208, 114, 214, 1))',
-          borderImageSlice: 1,
-          boxShadow: 'rgba(151, 65, 252, 0.2) 0 15px 30px -5px',
-        }}
-      >
-        <Link
-          to='hero'
-          spy={true}
-          smooth={true}
-          duration={1000}
-          className='cursor-pointer mb-2'
-          offset={-2000} // Adjust the offset as needed
-          title='Home'
-        >
-          <FontAwesomeIcon icon={faHome} />
-        </Link>
-        <Link
-          to='about'
-          spy={true}
-          smooth={true}
-          duration={500}
-          className='cursor-pointer mb-2'
-          title='About'
-        >
-          <FontAwesomeIcon icon={faUser} />
-        </Link>
-        <Link
-          to='skills'
-          spy={true}
-          smooth={true}
-          duration={500}
-          className='cursor-pointer mb-2'
-          title='Skills'
-        >
-          <FontAwesomeIcon icon={faCode} />
-        </Link>
-        <Link
-          to='timeline'
-          spy={true}
-          smooth={true}
-          duration={500}
-          className='cursor-pointer mb-2'
-          title='Timeline'
-        >
-          <FontAwesomeIcon icon={faClock} />
-        </Link>
-        <Link
-          to='projects'
-          spy={true}
-          smooth={true}
-          duration={500}
-          className='cursor-pointer mb-2'
-          title='Projects'
-        >
-          <FontAwesomeIcon icon={faProjectDiagram} />
-        </Link>
-        <Link
-          to='contact'
-          spy={true}
-          smooth={true}
-          duration={500}
-          className='cursor-pointer mb-2'
-          title='Contact'
-        >
-          <FontAwesomeIcon icon={faEnvelope} />
-        </Link>
-        <Link
-          to='blogs'
-          spy={true}
-          smooth={true}
-          duration={500}
-          className='cursor-pointer mb-2'
-          title='Blogs'
-        >
-          <FontAwesomeIcon icon={faNewspaper} />
-        </Link>
+    <nav
+      className='bg-white border-gray-200 dark:bg-gray-900  rounded-full hidden md:block'
+      style={{
+        border: '1px solid #8A2387', // Add a solid border with the desired color
+      }}
+    >
+      <div className='w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 rounded-lg'>
+        <div className='hidden w-fit md:block md:w-auto' id='navbar-default'>
+          <ul className='font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'>
+            <li>
+              <Link
+                to='hero'
+                offset={-2000}
+                smooth={true}
+                duration={500}
+                className='block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500'
+                aria-current='page'
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to='about'
+                smooth={true}
+                duration={500}
+                className='block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to='skills'
+                smooth={true}
+                duration={500}
+                className='block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+              >
+                Skills
+              </Link>
+            </li>
+            <li>
+              <Link
+                to='timeline'
+                smooth={true}
+                duration={500}
+                className='block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+              >
+                Timeline
+              </Link>
+            </li>
+            <li>
+              <Link
+                to='projects'
+                smooth={true}
+                duration={500}
+                className='block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+              >
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                to='blogs'
+                smooth={true}
+                duration={500}
+                className='block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+              >
+                Blogs
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

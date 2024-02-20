@@ -13,7 +13,7 @@ const AboutMe = () => {
 
   return (
     <section
-      className='min-h-screen flex flex-col justify-center items-center gap-12 px-8 md:px-12 lg:px-24 xl:px-48'
+      className='min-h-screen flex flex-col justify-center items-center gap-12 px-8 md:px-8 lg:px-12 xl:px-24'
       id='about'
     >
       <h1 className='mb-2 text-3xl md:text-4xl lg:text-5xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white p-2'>
@@ -35,9 +35,9 @@ const AboutMe = () => {
         opportunities, feel free to reach out to me.
       </p>
       {/* Connect with me icons */}
-      <div className='flex flex-wrap justify-center gap-8 mt-8'>
+      <div className='flex flex-wrap justify-center gap-4 md:gap-8 mt-8'>
         <FaLinkedin
-          size={48}
+          size={32}
           color='#2867B2'
           onClick={() =>
             openLinkInNewTab(
@@ -46,24 +46,24 @@ const AboutMe = () => {
           }
         />
         <FaTwitter
-          size={48}
+          size={32}
           color='#1DA1F2'
           onClick={() => openLinkInNewTab('https://twitter.com/the_tharindu')}
         />
         <FaGithub
-          size={48}
+          size={32}
           color='#333'
           onClick={() => openLinkInNewTab('https://github.com/TheTharz')}
         />
         <FaMedium
-          size={48}
+          size={32}
           color='#ffffff'
           onClick={() =>
             openLinkInNewTab('https://medium.com/@tharinduimalka915')
           }
         />
         <FaStackOverflow
-          size={48}
+          size={32}
           color='#F48024'
           onClick={() =>
             openLinkInNewTab(
@@ -71,7 +71,7 @@ const AboutMe = () => {
             )
           }
         />
-        {/*<FaInstagram size={48} color="#E4405F" onClick={() => openLinkInNewTab('https://www.instagram.com/your_instagram_username')} />*/}
+        {/*<FaInstagram size={32} color="#E4405F" onClick={() => openLinkInNewTab('https://www.instagram.com/your_instagram_username')} />*/}
       </div>
     </section>
   );

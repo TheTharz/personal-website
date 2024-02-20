@@ -1,29 +1,45 @@
 import heroImage from '../../assets/photos/hero.png';
 import CV from '../../constants/Tharindu_Jayawardhana.pdf';
+import { useRef } from 'react';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 
-type Props = {};
+const Hero = () => {
+  const container = useRef(null);
 
-function Hero({}: Props) {
+  useGSAP(
+    () => {
+      gsap.from('.box', { duration: 1.5, y: 1000, delay: 0 }); // <-- automatically reverted
+      gsap.from('.box1', { duration: 1.5, x: -1000, delay: 0.5 }); // <-- automatically reverted
+      gsap.from('.box2', { duration: 1.5, y: 1000, delay: 0.7 }); // <-- automatically reverted
+      gsap.from('.box3', { duration: 2, y: 1000, delay: 0.7 }); // <-- automatically reverted
+    },
+    { scope: container }
+  ); // <-- scope for selector text (optional)
+
   return (
     <section
-      className='flex flex-row items-center justify-around h-screen'
+      className='flex flex-col md:flex-row items-center justify-around h-screen'
       id='hero'
+      ref={container}
     >
-      <div className='absolute inset-0 bg-gradient-to-l from-transparent to-black opacity-75'></div>
-      <div className='flex-1 flex gap-2 flex-col'>
-        <h3 className='text-4xl font-bold text-white'>Hello, it's me</h3>
-        <h1 className='text-7xl font-bold text-white relative'>
+      {/* <div className='absolute inset-0 bg-gradient-to-l from-transparent to-black opacity-75'></div> */}
+      <div className='flex-1 flex gap-2 flex-col md:w-1/2'>
+        <h3 className='text-2xl md:text-4xl font-bold text-white z-10 box1'>
+          Hello, it's me
+        </h3>
+        <h1 className='text-4xl md:text-7xl font-bold text-white relative box1'>
           Tharindu
           <span className='inline-block w-5 h-5 rounded-full bg-blue ml-2'></span>
         </h1>
-        <p className='text-lg font-light text-gray-300'>
+        <p className='text-base md:text-lg font-light text-gray-300 box2'>
           An enthusiastic explorer in the realm of Computer Engineering, I'm a
           third-year undergraduate with a fervent passion for unraveling the
           mysteries of software engineering and the allure of DevOps. Always
           hungry for new challenges and eager to pave my path in the world of
           technology.
         </p>
-        <div className='max-w-screen-md'>
+        <div className='max-w-screen-md box3'>
           <a
             href={CV}
             rel='noreferrer'
@@ -36,11 +52,15 @@ function Hero({}: Props) {
           </a>
         </div>
       </div>
-      <div className='relative'>
-        <img src={heroImage} alt='Tharindu' className='max-h-screen' />
+      <div className='relative w-full md:w-1/2'>
+        <img
+          src={heroImage}
+          alt='Tharindu'
+          className='md:max-h-screen md:w-full md:h-auto z-10'
+        />
       </div>
     </section>
   );
-}
+};
 
 export default Hero;
