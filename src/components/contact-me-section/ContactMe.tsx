@@ -65,8 +65,8 @@ function ContactMe({}: Props) {
           className='flex flex-col gap-8'
         >
           <div className='lg:py-8 px-4 md:max-w-screen max-w-screen-sm'>
-            <h2 className='mb-2 text-3xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white p-2'>
-              Contact Me
+            <h2 className='mb-16 md:text-4xl text-xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white p-22'>
+              CONTACT ME
             </h2>
             <p className='mb-4 lg:mb-8 font-light text-center text-gray-500 dark:text-gray-400 sm:text-sm'>
               Want to talk with me? Just put an email here. I will respond as

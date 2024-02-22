@@ -33,7 +33,9 @@ const Blogs = () => {
   return (
     <section className='min-h-screen md:py-8' id='blogs'>
       <div className='container md:mx-auto px-4 '>
-        <h2 className='text-3xl font-bold text-center mb-8'>Latest Blogs</h2>
+        <h2 className='mb-16 md:text-4xl text-xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white p-2'>
+          LATEST BLOGS
+        </h2>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
           {blogs.map((blog, index) => (
             <BlogCard

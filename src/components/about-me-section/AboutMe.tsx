@@ -1,16 +1,4 @@
-import {
-  FaLinkedin,
-  FaTwitter,
-  FaGithub,
-  FaMedium,
-  FaStackOverflow,
-} from 'react-icons/fa';
-
 const AboutMe = () => {
-  const openLinkInNewTab = (url: string) => {
-    window.open(url, '_blank');
-  };
-
   return (
     <section
       className='min-h-screen flex flex-col justify-center items-center gap-12 px-8 md:px-8 lg:px-12 xl:px-24'
@@ -35,44 +23,8 @@ const AboutMe = () => {
         opportunities, feel free to reach out to me.
       </p>
       {/* Connect with me icons */}
-      <div className='flex flex-wrap justify-center gap-4 md:gap-8 mt-8'>
-        <FaLinkedin
-          size={32}
-          color='#2867B2'
-          onClick={() =>
-            openLinkInNewTab(
-              'https://www.linkedin.com/in/tharindu-jayawardana/'
-            )
-          }
-        />
-        <FaTwitter
-          size={32}
-          color='#1DA1F2'
-          onClick={() => openLinkInNewTab('https://twitter.com/the_tharindu')}
-        />
-        <FaGithub
-          size={32}
-          color='#333'
-          onClick={() => openLinkInNewTab('https://github.com/TheTharz')}
-        />
-        <FaMedium
-          size={32}
-          color='#ffffff'
-          onClick={() =>
-            openLinkInNewTab('https://medium.com/@tharinduimalka915')
-          }
-        />
-        <FaStackOverflow
-          size={32}
-          color='#F48024'
-          onClick={() =>
-            openLinkInNewTab(
-              'https://stackoverflow.com/users/22557132/tharindu'
-            )
-          }
-        />
-        {/*<FaInstagram size={32} color="#E4405F" onClick={() => openLinkInNewTab('https://www.instagram.com/your_instagram_username')} />*/}
-      </div>
+
+      <div className='flex flex-wrap justify-center gap-4 md:gap-8 mt-8'></div>
     </section>
   );
 };

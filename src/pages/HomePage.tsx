@@ -12,6 +12,7 @@ import Footer from '../components/footer/Footer.tsx';
 import PreLoad from '../components/preload/PreLoad.tsx';
 import ParticlesBackground from '../components/background/ParticlesBackground.jsx';
 import Navbar from '../components/navbar/Navbar.tsx';
+import SocialIcons from '../components/social-icons/SocialIcons.jsx';
 
 const HomePage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -50,6 +51,7 @@ const HomePage = () => {
 
         <div className='flex flex-col'>
           <div className='relative z-20 bg-[#050816]'>
+            <SocialIcons />
             <AboutMe />
 
             <Skills />
