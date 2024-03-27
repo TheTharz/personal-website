@@ -1,30 +1,39 @@
-# React + TypeScript + Vite
+# Personal Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This repository contains the source code for my personal website, built using React.js with Tailwind CSS for styling and animations. The website showcases my portfolio, projects, and other relevant information.
 
-Currently, two official plugins are available:
+## Features
+- Portfolio section highlighting my skills and experiences
+- Projects section showcasing my work with descriptions and demo links
+- About Me page providing background information and interests
+- Contact form for easy communication
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- React.js
+- TypeScript
+- Tailwind CSS (including animations)
+- HTML5
+- CSS3
+- JavaScript
+- Node.js (for backend, if applicable)
+- Express.js (for backend, if applicable)
 
-## Expanding the ESLint configuration
+## Installation
+To run this website locally, follow these steps:
+1. Clone the repository to your local machine using `git clone https://github.com/TheTharz/personal-website.git`
+2. Navigate to the project directory using `cd personal-website`
+3. Install the necessary dependencies using `npm install`
+4. Start the development server using `npm start`
+5. Open your browser and visit `http://localhost:3000` to view the website
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## Contributing
+Contributions to this project are welcome. Feel free to fork the repository and submit pull requests for any improvements or bug fixes.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Contact
+For any inquiries or feedback, you can reach me at [your_email@example.com](mailto:tharinduimalkajayawardhana@gmail.com).
+
