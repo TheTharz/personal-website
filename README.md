@@ -35,5 +35,5 @@ Contributions to this project are welcome. Feel free to fork the repository and 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
-For any inquiries or feedback, you can reach me at [your_email@example.com](mailto:tharinduimalkajayawardhana@gmail.com).
+For any inquiries or feedback, you can reach me at [tharinduimalkajayawardhana@gmail.com](mailto:tharinduimalkajayawardhana@gmail.com).
 
