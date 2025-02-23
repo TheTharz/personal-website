@@ -1,23 +1,18 @@
-export interface SkillData {
-    title: string;
-    skills: string[];
-}
-
 export const skillsData: SkillData[] = [
     {
-        title: 'Backend Development',
-        skills: ['NodeJS', 'Express', 'Spring Boot']
+        title: 'Software Development',
+        skills: ['Design Patterns', 'Flask', 'Node.js']
     },
     {
-        title: 'Frontend Development',
-        skills: ['React', 'Tailwind', 'Material UI']
-    },
-    {
-        title: 'Mobile Development',
-        skills: ['Flutter', 'Dart', 'GetX']
+        title: 'Infrastructure Management',
+        skills: ['AWS', 'Azure', 'GCP', 'Terraform']
     },
     {
         title: 'DevOps',
-        skills: ['Kubernetes', 'Docker', 'AWS']
+        skills: ['Kubernetes', 'Docker', 'CI/CD']
+    },
+    {
+        title: 'Database & Data Warehousing',
+        skills: ['Redshift', 'Databricks', 'PostgreSQL', 'Snowflake', 'SQL Server']
     }
 ];
