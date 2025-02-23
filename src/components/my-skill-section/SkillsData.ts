@@ -1,3 +1,7 @@
+export interface SkillData {
+    title: string;
+    skills: string[];
+}
 export const skillsData: SkillData[] = [
     {
         title: 'Software Development',
